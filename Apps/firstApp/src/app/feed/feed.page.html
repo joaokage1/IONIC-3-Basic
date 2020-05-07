@@ -4,13 +4,16 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-card class="md hydrated">
+<ion-content padding class="justify-content-center">
+  <ion-card class="md hydrated card">
     <img src="assets/12345.jpg" alt="">
     <ion-item>
       <ion-avatar item-start>
         <img src="assets/icon/favicon.png" >
       </ion-avatar>
+      <div class="nomeUsuario">
+        <h2>{{nome_usuario}}</h2>
+      </div>
     </ion-item>
     <ion-card-header>
       <ion-card-subtitle>
@@ -23,5 +26,19 @@
       Keep close to Nature's heart... and break clear away, once in awhile,
       and climb a mountain or spend a week in the woods. Wash your spirit clean.
     </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <ion-button shape="round" color="secondary">
+          <ion-icon slot="start" name="thumbs-up"></ion-icon>
+          <div>12 Likes</div>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button shape="round" >Comments</ion-button>
+      </ion-col>
+    </ion-row>
   </ion-card>
+
+
 </ion-content>
